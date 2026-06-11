@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Artificial Intelligence — Eli M. Davis, Ph.D. Candidate (ABD) | Theory, Methodology, Practice, Training</title>
+<meta name="description" content="Eli M. Davis's full position on artificial intelligence: AI as an epigenetic actor — an informational environment that participates in the narration of the human. Theory, an original research methodology (agentic nkwaethnography, AMRI), five working platforms, and sovereignty-first AI training.">
+<meta property="og:title" content="Artificial Intelligence — Eli M. Davis">
+<meta property="og:description" content="What will become of the human, and how will it be narrated? How will artificial intelligence participate in that narration?">
+<meta property="og:type" content="article">
+<meta property="og:url" content="https://elimdavis.com/ai.html">
+<link rel="canonical" href="https://elimdavis.com/ai.html">
+<style>
+  :root{
+    --paper:#faf7f1; --card:#ffffff; --ink:#211b14; --ink-soft:#5b5246;
+    --gold:#a36d1c; --gold-deep:#7d5310; --gold-tint:#f4ead7; --navy:#19222b;
+    --line:#e7dfd2; --maxw:1060px;
+    --serif:"Iowan Old Style",Palatino,"Palatino Linotype","Book Antiqua",Georgia,serif;
+    --sans:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+  }
+  *{margin:0;padding:0;box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{font-family:var(--sans);color:var(--ink);background:var(--paper);line-height:1.65;-webkit-font-smoothing:antialiased;}
+  .wrap{max-width:var(--maxw);margin:0 auto;padding:0 24px;}
+  a{color:var(--gold-deep);}
+  h1,h2,h3{font-family:var(--serif);}
+  header{position:sticky;top:0;z-index:50;background:rgba(250,247,241,.93);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);}
+  .nav{display:flex;align-items:center;justify-content:space-between;height:62px;}
+  .logo{font-family:var(--serif);font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none;}
+  .logo em{color:var(--gold);font-style:normal;}
+  .logo-cred{font-family:var(--sans);font-size:.7rem;font-weight:700;color:var(--gold-deep);letter-spacing:.05em;text-transform:uppercase;margin-left:8px;vertical-align:2px;}
+  @media(max-width:1020px){.logo-cred{display:none;}}
+  .nav-links{display:flex;gap:24px;list-style:none;align-items:center;}
+  .nav-links a{color:var(--ink-soft);text-decoration:none;font-size:.93rem;font-weight:600;}
+  .nav-cta{background:var(--ink);color:var(--paper) !important;padding:8px 17px;border-radius:999px;}
+  @media(max-width:780px){.nav-links li:not(.keep){display:none;}}
+  .kicker{color:var(--gold-deep);font-weight:800;text-transform:uppercase;letter-spacing:.12em;font-size:.78rem;margin-bottom:14px;}
+  section{padding:72px 0;}
+  h1{font-size:clamp(2.2rem,5vw,3.4rem);line-height:1.1;font-weight:700;letter-spacing:-.015em;}
+  h1 .q{color:var(--gold);}
+  h2{font-size:clamp(1.6rem,3.2vw,2.2rem);line-height:1.15;font-weight:700;margin-bottom:16px;}
+  .lede{font-size:1.14rem;color:var(--ink-soft);margin-top:22px;max-width:42em;}
+  .prose p{color:var(--ink-soft);margin-bottom:18px;max-width:46em;font-size:1.04rem;}
+  .prose p strong{color:var(--ink);}
+  .pull{font-family:var(--serif);font-size:1.35rem;line-height:1.5;color:var(--ink);border-left:3px solid var(--gold);padding-left:22px;margin:30px 0;max-width:40em;}
+  .cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:20px;}
+  .card{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:28px 26px;}
+  .card h3{font-size:1.12rem;margin-bottom:10px;}
+  .card .tag{display:inline-block;font-size:.7rem;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--gold-deep);background:var(--gold-tint);border-radius:999px;padding:4px 11px;margin-bottom:14px;}
+  .card p{font-size:.95rem;color:var(--ink-soft);}
+  .dark{background:var(--navy);color:#ece5d8;}
+  .dark h2{color:#fff;}
+  .dark .kicker{color:#d9a84e;}
+  .dark .prose p{color:#bdb2a0;}
+  .dark .pull{color:#ece5d8;border-color:#d9a84e;}
+  .btn{display:inline-block;text-decoration:none;font-weight:700;border-radius:999px;padding:13px 26px;font-size:.98rem;}
+  .btn-dark{background:var(--ink);color:var(--paper);}
+  .btn-gold{background:var(--gold);color:#fff;}
+  footer{border-top:1px solid var(--line);padding:34px 0 46px;font-size:.87rem;color:#94876f;}
+  .foot-grid{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;}
+  footer a{color:#94876f;}
+</style>
+</head>
+<body>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="index.html">Eli M. Davis<em>.</em> <span class="logo-cred">Ph.D. Candidate · U of SC</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#educator">Educator</a></li>
+      <li><a href="index.html#research">Research</a></li>
+      <li><a href="ai.html" style="color:var(--gold-deep);">Artificial Intelligence</a></li>
+      <li><a href="index.html#builds">What I Build</a></li>
+      <li class="keep"><a class="nav-cta" href="index.html#work">Work with me</a></li>
+    </ul>
+  </div>
+</header>
+
+<main>
+
+  <!-- HERO -->
+  <section style="padding-top:84px;">
+    <div class="wrap">
+      <p class="kicker">Artificial Intelligence · Theory, Methodology, Practice, Training</p>
+      <h1>What will become of the human —<br><span class="q">and how will it be narrated?</span></h1>
+      <p class="lede">
+        That is my research question for the age of artificial intelligence. AI is not just a
+        tool entering the workplace. It is a new <strong>informational environment</strong> —
+        and my scholarship argues that environments write themselves into people. AI will
+        reshape what counts as work, what work is worth, and therefore what people believe
+        they are worth. It will participate in the narration of the human. Narration, my
+        framework holds, is how environments reach the body. Which makes artificial
+        intelligence an <strong>epigenetic actor</strong> — and makes the question of who
+        holds the pen the most important question in the room.
+      </p>
+    </div>
+  </section>
+
+  <!-- ORIGIN -->
+  <section style="background:var(--gold-tint);padding:64px 0;">
+    <div class="wrap prose">
+      <p class="kicker">Since the beginning</p>
+      <h2>Hooked before the hype</h2>
+      <p>
+        I've been in this since the public beginning — playing with DALL·E when image
+        generation first dropped, then ChatGPT in late 2022 — hooked from the first prompt,
+        and not as a spectator. By 2023 I was publishing on AI and epigenetics. By 2024 I had
+        published the <a href="https://ace-ed.org/bpf/">Basquiat Pedagogy Framework</a> — a
+        culturally responsive, AI-assisted approach to teacher preparation — and was teaching
+        prompt-engineering workshops to educator networks. By 2025 I was hosting a 12-episode
+        podcast season on AI in education and had built a custom AI module for my own
+        preservice teachers. Today I work daily across the full toolchain — Claude, Cursor,
+        Codex, Gemini, ChatGPT, Perplexity, NotebookLM, Antigravity — not loyal to a brand,
+        loyal to the practice.
+      </p>
+      <p class="pull">
+        I am a theorist of this moment and a practitioner in it — and I intend to help shape
+        the culture of artificial intelligence, not just use its products.
+      </p>
+    </div>
+  </section>
+
+  <!-- THEORY -->
+  <section class="dark">
+    <div class="wrap prose">
+      <p class="kicker">The theory</p>
+      <h2>AI is an environment, and environments write people</h2>
+      <p>
+        My framework, <a href="index.html#epigenetic-consciousness" style="color:#d9a84e;">Epigenetic
+        Consciousness</a>, names four modes of environment that write themselves into bodies
+        and minds: material, structural, relational, and informational. Artificial intelligence
+        is the most powerful informational environment ever built — and it is rapidly becoming
+        structural (deciding access), relational (talking with our children), and economic
+        (re-pricing human labor). When the economy renames what work is worth, it renames
+        people. That renaming is narration. And narration, from sociogeny forward, is the
+        mechanism by which environments become flesh.
+      </p>
+      <p>
+        So the questions I bring to AI are not "which model is best." They are: <strong>What
+        will become of the human, and how will it be narrated? Who authors that narration —
+        and will the people most often narrated <em>about</em> finally hold the pen?</strong>
+        History already shows us what happens when a powerful narrating system writes a people
+        without their consent. I study that history. I refuse the rerun.
+      </p>
+      <p class="pull">
+        The line I build by, and the line I teach: the human narrates; the machine carries.
+        Sovereignty is not a setting. It is the architecture.
+      </p>
+    </div>
+  </section>
+
+  <!-- METHODOLOGY -->
+  <section>
+    <div class="wrap">
+      <p class="kicker">The methodology</p>
+      <h2>An original research method, built on AI — with the human as the pen</h2>
+      <div class="cards" style="margin-top:28px;">
+        <div class="card">
+          <span class="tag">Method</span>
+          <h3>Agentic Nkwaethnography</h3>
+          <p>My dissertation's methodology: AI-mediated autoethnography under carrier
+          supervision, extending the endarkened research tradition. The unit of field data is
+          the whole conversation — 5,400+ of them and counting. The carrier narrates; the
+          medium carries; the carrier keeps every judgment that matters.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Instrument</span>
+          <h3>AMRI — AI-Mediated Reflective Inquiry</h3>
+          <p>The protocol inside the method: structured reflective dialogue with AI in which
+          internalized voices become audible as voices — so the human can re-author them.
+          Reflection at machine patience, judgment at human depth.</p>
+        </div>
+        <div class="card">
+          <span class="tag">Craft</span>
+          <h3>One voice at machine scale</h3>
+          <p>I developed a reproducible technique — assembled rules, definitions, and standards
+          every agent loads before working — that lets many parallel AI agents write as one
+          human voice, and lets separate AI systems share one mind about a project. It is
+          citable, teachable, and it transfers to any organization.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PRACTICE -->
+  <section style="background:var(--gold-tint);">
+    <div class="wrap prose">
+      <p class="kicker">The practice</p>
+      <h2>I ship what I theorize</h2>
+      <p>
+        Five working AI platforms, all built from scratch, all carrying the same soul:
+        <strong>GoodCatch</strong> (recognition-first school behavior),
+        <strong>ECHO</strong> (whole-child tutoring intelligence),
+        <strong>Giovanna</strong> (zero-knowledge support for families of neurodivergent
+        children), the <strong>EC Research Platform</strong> (the dissertation's living
+        artifact), and the <strong>NBPTS Living Evidence Repository</strong> (national
+        standards work). Plus ED 319GPT for my preservice teachers, published frameworks,
+        workshops, and the podcast. Every one of them draws the same line in code: no child's
+        data leaves the family's hands; no machine interprets a child; the human stays the
+        author of their own story.
+      </p>
+      <p><a href="index.html#builds"><strong>See the platforms →</strong></a></p>
+    </div>
+  </section>
+
+  <!-- TRAINING CTA -->
+  <section style="text-align:center;padding:80px 0;">
+    <div class="wrap">
+      <p class="kicker">The training</p>
+      <h2>Bring this to your people</h2>
+      <p class="lede" style="margin:18px auto 30px;">
+        AI training for educators, leaders, and organizations — hands-on, sovereignty-first,
+        taught by someone who builds with these tools every day, studies learning for a living,
+        and thinks about what AI is doing to the human at the level the moment demands.
+      </p>
+      <a class="btn btn-dark" href="mailto:eli@4blackcenturies.com">eli@4blackcenturies.com</a>
+      &nbsp;&nbsp;<a class="btn btn-gold" href="index.html#work">Speaking & consulting</a>
+    </div>
+  </section>
+
+</main>
+
+<footer>
+  <div class="wrap foot-grid">
+    <span>© 2026 Eli M. Davis, Ph.D. Candidate (ABD), University of South Carolina · 4 Black Centuries LLC</span>
+    <span><a href="index.html">Home</a> · <a href="https://goodcatchapp.com">GoodCatch</a> · <a href="https://elidavis4.substack.com">Substack</a></span>
+  </div>
+</footer>
+
+</body>
+</html>

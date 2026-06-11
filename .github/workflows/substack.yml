@@ -1,0 +1,20 @@
+name: Refresh latest writing from Substack
+on:
+  schedule:
+    - cron: "0 11 * * *"   # daily, 6am Central
+  workflow_dispatch:
+permissions:
+  contents: write
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Fetch Substack feed
+        run: python3 tools/fetch_writing.py
+      - name: Commit if changed
+        run: |
+          git config user.name "site-bot"
+          git config user.email "actions@github.com"
+          git add writing.json
+          git diff --cached --quiet || (git commit -m "auto: refresh latest writing" && git push)

@@ -657,6 +657,23 @@
     </div>
   </section>
 
+  <!-- LATEST WRITING (auto-updated daily from Substack by GitHub Action) -->
+  <section id="writing" style="padding:56px 0;">
+    <div class="wrap">
+      <p class="kicker">Latest writing</p>
+      <div id="writing-list" class="cards" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));"></div>
+    </div>
+  </section>
+  <script>
+  fetch('writing.json').then(r=>r.json()).then(d=>{
+    const el=document.getElementById('writing-list');
+    el.innerHTML=d.posts.map(p=>`<a class="card" style="text-decoration:none;display:block;" href="${p.link}">
+      <span class="tag">${p.date.replace(/^\w+,\s*/,'')}</span>
+      <h3 style="font-size:1.05rem;margin-bottom:8px;">${p.title}</h3>
+      <p style="font-size:.92rem;color:var(--ink-soft);">${p.snippet}…</p></a>`).join('');
+  }).catch(()=>{document.getElementById('writing').style.display='none';});
+  </script>
+
   <!-- SPEAKING / WORK WITH ME -->
   <section id="work" style="background:var(--gold-tint);">
     <div class="wrap two-col">

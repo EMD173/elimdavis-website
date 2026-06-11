@@ -1,0 +1,21 @@
+name: Daily site health check
+on:
+  schedule:
+    - cron: "30 11 * * *"   # daily, 6:30am Central
+  workflow_dispatch:
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - name: elimdavis.com up + content + sitemap
+        run: |
+          curl -sf https://elimdavis.com/ | grep -q "Epigenetic Consciousness"
+          curl -sf -o /dev/null https://elimdavis.com/sitemap.xml
+          curl -sf -o /dev/null https://elimdavis.com/photos/hallway.jpg
+      - name: goodcatchapp.com up + content + sitemap
+        run: |
+          curl -sf https://goodcatchapp.com/ | grep -q "Catch them being good"
+          curl -sf -o /dev/null https://goodcatchapp.com/sitemap.xml
+      - name: 4blackcenturies.com redirect intact
+        run: |
+          test "$(curl -s -o /dev/null -w '%{http_code}' http://4blackcenturies.com)" = "302"

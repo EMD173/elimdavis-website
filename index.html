@@ -125,6 +125,8 @@
   .nav{display:flex;align-items:center;justify-content:space-between;height:62px;}
   .logo{font-family:var(--serif);font-weight:700;font-size:1.15rem;color:var(--ink);text-decoration:none;letter-spacing:.01em;}
   .logo em{color:var(--gold);font-style:normal;}
+  .logo-cred{font-family:var(--sans);font-size:.7rem;font-weight:700;color:var(--gold-deep);letter-spacing:.05em;text-transform:uppercase;margin-left:8px;vertical-align:2px;}
+  @media(max-width:1020px){.logo-cred{display:none;}}
   .nav-links{display:flex;gap:24px;list-style:none;align-items:center;}
   .nav-links a{color:var(--ink-soft);text-decoration:none;font-size:.93rem;font-weight:600;}
   .nav-links a:hover{color:var(--gold-deep);}
@@ -202,7 +204,7 @@
 
 <header>
   <div class="wrap nav">
-    <a class="logo" href="#top">Eli M. Davis<em>.</em></a>
+    <a class="logo" href="#top">Eli M. Davis<em>.</em> <span class="logo-cred">Ph.D. Candidate · U of SC</span></a>
     <ul class="nav-links">
       <li><a href="#educator">Educator</a></li>
       <li><a href="#research">Research</a></li>
@@ -220,7 +222,7 @@
   <div class="hero">
     <div class="wrap hero-grid">
       <div>
-        <p class="kicker">Eli M. Davis · Ph.D. Candidate (ABD) · Birmingham, Alabama</p>
+        <p class="kicker">Eli M. Davis · Ph.D. Candidate (ABD), University of South Carolina · Birmingham, Alabama</p>
         <h1><span class="q">What's the story?</span><br>Everything I do asks that question.</h1>
         <p class="lede">
           I'm Eli M. Davis — a special-education teacher, a Ph.D. candidate (ABD) at the

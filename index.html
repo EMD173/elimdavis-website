@@ -162,6 +162,8 @@
   @media(max-width:820px){.two-col{grid-template-columns:1fr;}}
   .photo-card img{width:100%;border-radius:16px;display:block;object-fit:cover;box-shadow:0 18px 44px rgba(33,27,20,.16);}
   .caption{font-size:.84rem;color:#94876f;margin-top:10px;font-style:italic;}
+  .field-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;margin-top:48px;align-items:start;}
+  .field-gallery .photo-card img{aspect-ratio:4/5;}
   .prose p{color:var(--ink-soft);margin-bottom:16px;font-size:1.02rem;}
   .prose p strong{color:var(--ink);}
   .pull{font-family:var(--serif);font-size:1.3rem;line-height:1.45;color:var(--ink);border-left:3px solid var(--gold);padding-left:20px;margin:26px 0;}
@@ -367,10 +369,18 @@
       <div class="photo-card">
         <img src="photos/ancestor-wall.jpg" alt="Handwritten inscriptions on the memorial wall at Assin Manso, Ghana, including: I told you I would take you home — Eli Davis" loading="lazy">
         <p class="caption">Assin Manso, Ghana — April 2022. In my hand, on the wall: <em>"I told you I would take you home."</em></p>
-        <img src="photos/nigeria-classroom.jpg" alt="Eli Davis smiling beside a student in uniform against a blue classroom wall in Nigeria" loading="lazy" style="margin-top:22px;">
-        <p class="caption">Nigeria, 2022 — Fulbright-Hays. A classroom an ocean away.</p>
-        <img src="photos/ghana-meal.jpg" alt="Eli Davis eating fish-stock pepper soup with his hands at the W. E. B. Du Bois House in Accra, Ghana" loading="lazy" style="margin-top:22px;">
-        <p class="caption">Accra, 2022 — fish-stock pepper soup, eaten by hand, at the W. E. B. Du Bois House. I called it what it was: <em>feeding ancestral DNA.</em></p>
+      </div>
+    </div>
+    <div class="wrap">
+      <div class="field-gallery">
+        <div class="photo-card">
+          <img src="photos/nigeria-classroom.jpg" alt="Eli Davis smiling beside a student in uniform against a blue classroom wall in Nigeria" loading="lazy">
+          <p class="caption">Nigeria, 2022 — Fulbright-Hays. A classroom an ocean away.</p>
+        </div>
+        <div class="photo-card">
+          <img src="photos/ghana-meal.jpg" alt="Eli Davis eating fish-stock pepper soup with his hands at the W. E. B. Du Bois House in Accra, Ghana" loading="lazy">
+          <p class="caption">Accra, 2022 — fish-stock pepper soup, eaten by hand, at the W. E. B. Du Bois House. I called it what it was: <em>feeding ancestral DNA.</em></p>
+        </div>
       </div>
     </div>
   </section>

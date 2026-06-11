@@ -71,6 +71,8 @@ def main():
     ap.add_argument("--face", action="append", default=[],
                     help="x0,y0,x1,y1 fractions: soft ellipse blur (repeatable)")
     ap.add_argument("--person-poly", help="JSON polygon file -> polygon mode")
+    ap.add_argument("--protect", action="append", default=[],
+                    help="x0,y0,x1,y1 fractions kept sharp (e.g. a held object)")
     ap.add_argument("--radius", type=int, default=13)
     ap.add_argument("--face-radius", type=int, default=9)
     ap.add_argument("--feather", type=int, default=24)
@@ -88,6 +90,9 @@ def main():
     # harden + slightly grow the person matte so the etch hugs the body
     person = person.point(lambda v: 255 if v > 96 else 0)
     person = person.filter(ImageFilter.MaxFilter(9))
+    pd = ImageDraw.Draw(person)
+    for spec in a.protect:
+        pd.rectangle(frac_box(spec, W, H), fill=255)
 
     # what to frost
     frost_mask = Image.new("L", (W, H), 255 if a.all_background else 0)

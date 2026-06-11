@@ -12,8 +12,11 @@ the public site (city + era only).
 ## Before the classrooms — the first environment
 - **archive-000-first-environment.jpg** — Eli as a small boy in overalls on a porch, white iron
   gate. He saw it for the FIRST TIME on 2026-06-11, at the bottom of his Google Photos scroll.
-  **SITE (live)** — opens The Archive section as Entry No. 000. Story details pending from Eli:
-  who took it, which house/city, approximate year. (Must-not-get-wrong facts: he narrates.)
+  **SITE (live)** — opens The Archive section as Entry No. 000. ELI'S ADDITION (2026-06-11,
+  spoken): "In a few years, this kid will be tested for special education. He didn't get in" —
+  no label, but held back twice + 'slow class' anyway; entry now cross-references No. 002,
+  whose caption adds: the grown man praying is "praying for the release of that narrative."
+  Still pending: who took it, which house/city, approximate year. (He narrates.)
 
 ## Milwaukee, WI — 2008–2015
 *St. A Transition Therapeutic School (2008–12) · M.S. Cardinal Stritch (2015) · AP internship, North Division HS (2014–15)*

@@ -58,6 +58,31 @@ the public site (city + era only).
 - Dupuy Alternative School PBIS material (2026 flyer, team-training slides) — in Google Photos.
   **PENDING**.
 
+## Told 2026-06-11 (spoken; the conversation is the field note) — three photos, one arc
+1. **Guitar in the classroom (Birmingham era, recent)** — Eli seated with acoustic guitar,
+   young students on the carpet, one child standing in dialogue with him. HIS STORY: "I do
+   this guitar performance — I sing ABCs, silly songs for the students using a guitar, and
+   then I let them play the guitar. They seem to like that. I've done that all over, multiple
+   places." ⚠️ HAZARD: the smartboard behind him shows a PowerSchool attendance grid with
+   FULL STUDENT NAMES legible — MUST blur the screen before ANY use; children's faces policy
+   also applies. **PENDING file + blur edit.**
+2. **Brown-coat portrait** — HIS STORY: "During that time I wasn't feeling all that well
+   emotionally. When I see this picture, I see a sad me. But the picture is dope, though."
+   Planned: Work With Me portrait on the site; the Archive entry carries the honest story.
+   **PENDING file.**
+3. **Praying at the Osun River (Osogbo, Nigeria, 2022)** — Eli from behind, barefoot at the
+   water, white-clothed shrine figure across the river. HIS STORY: "Me at the Osun River
+   praying about what was making the man in the scarf sad — that was before, so I prayed on
+   it. I don't know what it did, but I do know those waters carry a lot of history. Many
+   people have gone to that river and prayed, in that section, right there. And I did too.
+   My Black self. My self who was held back in the third grade and the fourth grade, who had
+   to repeat the fourth grade, who got put in the fifth-grade 'slow class.'" — The arc: the
+   boy the school called slow → the man praying in the river that carries history → the
+   Ph.D. candidate (ABD). Sociogenic entropy and restoration in a single frame. Shot from
+   behind = publishable. **PENDING file; SITE-intended (The Field or Archive No. 002).**
+   ALSO: dissertation positionality data (held back 3rd + 4th grade, repeated 4th, 'slow
+   class' label) — feed to the Ch3 positionality thread.
+
 ## The Field — diaspora (Fulbright-Hays + Ghana)
 - **ancestor-wall.jpg** — Assin Manso, April 2022: "I told you I would take you home." **SITE (live)**.
 - **ghana-meal.jpg** — Du Bois House, Accra: fish-stock pepper soup, "feeding ancestral DNA." **SITE (live)**.

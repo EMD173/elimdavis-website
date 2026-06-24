@@ -217,6 +217,10 @@
   footer{border-top:1px solid var(--line);padding:34px 0 46px;font-size:.87rem;color:#94876f;}
   .foot-grid{display:flex;justify-content:space-between;gap:18px;flex-wrap:wrap;}
   footer a{color:#94876f;}
+  /* scroll-in animations */
+  .reveal{opacity:0;transform:translateY(22px);transition:opacity .7s cubic-bezier(.22,.61,.36,1),transform .7s cubic-bezier(.22,.61,.36,1);will-change:opacity,transform}
+  .reveal.in{opacity:1;transform:none}
+  @media(prefers-reduced-motion:reduce){.reveal{opacity:1!important;transform:none!important;transition:none}}
 </style>
 </head>
 <body>
@@ -786,6 +790,26 @@
     <span><a href="https://goodcatchapp.com">GoodCatch</a> · <a href="https://elidavis4.substack.com">Substack</a> · Birmingham, Alabama</span>
   </div>
 </footer>
+
+<noscript><style>.reveal{opacity:1!important;transform:none!important}</style></noscript>
+<script>
+(function(){
+  var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  if (reduce || !('IntersectionObserver' in window)) return;
+  var sel = '.kicker,h1,h2,h3,.section-lede,.prose,.card,.photo-card,.stat,.role,.topic,.two-col>div,.btn';
+  var els = Array.prototype.slice.call(document.querySelectorAll(sel));
+  els.forEach(function(el){
+    el.classList.add('reveal');
+    var sibs = Array.prototype.filter.call(el.parentNode.children, function(c){ return c.classList && c.classList.contains('reveal'); });
+    var i = sibs.indexOf(el);
+    if (i > 0) el.style.transitionDelay = Math.min(i, 6) * 0.06 + 's';
+  });
+  var io = new IntersectionObserver(function(entries){
+    entries.forEach(function(e){ if (e.isIntersecting){ e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.1, rootMargin: '0px 0px -40px 0px' });
+  els.forEach(function(el){ io.observe(el); });
+})();
+</script>
 
 </body>
 </html>

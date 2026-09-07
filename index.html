@@ -179,6 +179,14 @@
   .caption{font-size:.84rem;color:#94876f;margin-top:10px;font-style:italic;}
   .field-gallery{display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:28px;margin-top:48px;align-items:start;}
   .field-gallery .photo-card img{aspect-ratio:4/5;}
+  /* The record, in pictures: the trifold is portrait and its QR code is the point, so it gets a tall
+     card that shows the whole photo; the two landscape shots stack beside it. */
+  .record-shots{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,1fr);gap:18px;align-items:start;}
+  .record-shots .tall{grid-row:span 2;}
+  .record-shots .tall img{aspect-ratio:4/5;}
+  .record-shots .game img{aspect-ratio:16/9;}
+  .record-shots .wide img{aspect-ratio:4/3;}
+  @media(max-width:640px){.record-shots{grid-template-columns:1fr;}.record-shots .tall{grid-row:auto;}}
   .prose p{color:var(--ink-soft);margin-bottom:16px;font-size:1.02rem;}
   .prose p strong{color:var(--ink);}
   .pull{font-family:var(--serif);font-size:1.3rem;line-height:1.45;color:var(--ink);border-left:3px solid var(--gold);padding-left:20px;margin:26px 0;}
@@ -313,10 +321,10 @@
           group used AI to teach themselves the school's untouched 3D printers. Curiosity
           breeds brilliance. All we have to do is put a spark to it and watch these kids fly.
         </p>
-        <div class="cards" style="grid-template-columns:repeat(auto-fit,minmax(260px,1fr));gap:18px;">
-          <div class="photo-card"><img src="photos/stem/stem-trifold-kid.jpg" alt="A student smiling at his Striker Academy showcase trifold with a scan-to-engage QR code" loading="lazy"><p class="caption">Showcase day — Striker Academy, a game a student built.</p></div>
-          <div class="photo-card"><img src="photos/stem/stem-game.jpg" alt="Striker Academy gameplay, Striker 1, United 1, first to five" loading="lazy"><p class="caption">The game itself, in play — built by a sixth grader, live on the web.</p></div>
-          <div class="photo-card"><img src="photos/stem/stem-printers.jpg" alt="Three smiling students of the Cosmic STEM Club present two 3D printers" loading="lazy"><p class="caption">The Cosmic STEM Club, a name they gave themselves — with the 3D printers they used AI to teach themselves.</p></div>
+        <div class="record-shots">
+          <div class="photo-card tall"><img src="photos/stem/stem-trifold-kid.jpg" alt="A student smiling at his Striker Academy showcase trifold, beside a scan-here-to-engage sign with its QR code" loading="lazy"><p class="caption">Showcase day — Striker Academy, a game a student built. The game lived behind that QR code.</p></div>
+          <div class="photo-card game"><img src="photos/stem/stem-game.jpg" alt="Striker Academy gameplay, Striker 1, United 1, first to five" loading="lazy"><p class="caption">The game itself, in play — built by a sixth grader, live on the web.</p></div>
+          <div class="photo-card wide"><img src="photos/stem/stem-printers.jpg" alt="Three smiling students of the Cosmic STEM Club present two 3D printers" loading="lazy"><p class="caption">The Cosmic STEM Club, a name they gave themselves — with the 3D printers they used AI to teach themselves.</p></div>
         </div>
       </div>
       <div style="margin-top:34px;">
